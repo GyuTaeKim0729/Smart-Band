@@ -840,7 +840,7 @@ int main(void)
             static uint16_t lengthS=3;
 
             nrf_delay_ms(200);
-            sprintf((char *)data_send, "fucking asshole");
+            sprintf((char *)data_send, "good boy");
             ble_nus_data_send(&m_nus, data_send, &length, m_conn_handle);
             nrf_delay_ms(200);
 

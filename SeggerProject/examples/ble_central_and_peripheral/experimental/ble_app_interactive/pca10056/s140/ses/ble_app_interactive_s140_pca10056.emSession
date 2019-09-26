@@ -1,0 +1,59 @@
+<!DOCTYPE CrossStudio_Session_File>
+<session>
+ <Bookmarks/>
+ <Breakpoints groups="Breakpoints" active_group="Breakpoints">
+  <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
+ </Breakpoints>
+ <ExecutionProfileWindow/>
+ <FrameBufferWindow>
+  <FrameBufferWindow bufferHeight="-1" addressSpace="" addressText="" bufferWidth="-1"/>
+ </FrameBufferWindow>
+ <Memory1/>
+ <Memory2/>
+ <Memory3/>
+ <Memory4/>
+ <Project>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;Application"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;Board Definition"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;Board Support"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;None"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;nRF_BLE"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;nRF_BLE_Services"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;nRF_NFC"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;nRF_Oberon_Crypto"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;nRF_Segger_RTT"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;nRF_SoftDevice"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;nRF_TLS"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;Segger Startup Files"/>
+  <ProjectSessionItem path="ble_app_interactive_s140_pca10056;ble_app_interactive_s140_pca10056;Third Parties"/>
+ </Project>
+ <Register1/>
+ <Register2/>
+ <Register3/>
+ <Register4/>
+ <Threads>
+  <ThreadsWindow showLists=""/>
+ </Threads>
+ <TraceWindow>
+  <Trace enabled="Yes"/>
+ </TraceWindow>
+ <Watch1>
+  <Watches active="1" update="Never"/>
+ </Watch1>
+ <Watch2>
+  <Watches active="0" update="Never"/>
+ </Watch2>
+ <Watch3>
+  <Watches active="0" update="Never"/>
+ </Watch3>
+ <Watch4>
+  <Watches active="0" update="Never"/>
+ </Watch4>
+ <Files>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="59" useTextEdit="1" useBinaryEdit="0" left="0" path="../../../nfc_m.c" selected="1" top="45" codecName="Default"/>
+ </Files>
+ <ARMCrossStudioWindow activeProject="ble_app_interactive_s140_pca10056" fileDialogDefaultFilter="*.c" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="/Users/kjh/Documents/SEGGER Embedded Studio for ARM Projects/nRF5_SDK_15.3.0_59ac345 (2) 2/examples/ble_peripheral/ble_app_template" debugSearchPath="" autoConnectCapabilities="3199"/>
+</session>

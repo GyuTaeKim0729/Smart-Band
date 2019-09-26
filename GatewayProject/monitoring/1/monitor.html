@@ -1,0 +1,125 @@
+<html>
+
+<head>
+    <meta charset="utf-8" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #F1F2F6;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .column {
+            float: left;
+            width: 43%;
+            padding: 0 13px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {
+            margin: 0 -5px;
+            padding: 20;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+
+            var data = google.visualization.arrayToDataTable([
+                ['activity', 'Count per Day'],
+                ['걷기', 6],
+                ['앉기/일어서기', 2],
+                ['뛰기', 2],
+                ['낙상', 1],
+                ['정지', 10]
+            ]);
+
+            var options = {
+                title: '하루 행동',
+                pieHole: 0.4,
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        google.charts.load('current', { packages: ['corechart', 'line'] });
+        google.charts.setOnLoadCallback(drawBasic);
+
+        function drawBasic() {
+
+            var data = new google.visualization.DataTable();
+
+            <% HEADER %>
+            <% DATA %>
+
+
+            var options = {
+                hAxis: {
+                    title: '시간'
+                },
+                vAxis: {
+                    title: '활동량'
+                }
+            };
+
+            var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+            chart.draw(data, options);
+        }
+    </script>
+    <script type="text/javascript">
+        var state = <% STATE %>
+            document.getElementById("state").innerHTML = state.toString();
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 align="center">실시간 행동 분석 모니터</h1>
+    </div>
+
+    <div class="row">
+        <div class="column" style="width: 64%">
+            <div class="card">
+                <div id="donutchart" style="width: 100%; height: 400px;"></div>
+            </div>
+        </div>
+        <div class="column" style="width: 32%">
+            <div class="card">
+                <p id="state"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="width: 100%">
+        <div class="column" style="width: 96%">
+            <div class="card">
+                <div id="chart_div" style="width: 100%; height: 300px;"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+model_checkpoint_path: "basic_lstm_2625.ckpt-70"
+all_model_checkpoint_paths: "basic_lstm_2500.ckpt-10"
+all_model_checkpoint_paths: "basic_lstm_2625.ckpt-70"
